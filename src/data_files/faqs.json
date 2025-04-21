@@ -1,0 +1,29 @@
+{
+  "subTitle": "Ask us anything about our financial services, and get factual responses.",
+  "faqs": [
+    {
+      "question": "What tax services do you provide?",
+      "answer": "We offer comprehensive tax services including tax preparation for individuals and businesses, tax planning, IRS representation, sales tax compliance, and international tax services. Our experts stay current with tax code changes to maximize your deductions while ensuring complete compliance."
+    },
+    {
+      "question": "Can I upgrade from individual services to a comprehensive package?",
+      "answer": "Absolutely! You can upgrade to our Professional or Enterprise package at any time to access a wider range of financial services, enjoy priority support, and receive personalized financial guidance. Contact our team for a seamless transition."
+    },
+    {
+      "question": "What discounts are available for ongoing bookkeeping services?",
+      "answer": "Clients with ongoing bookkeeping arrangements receive preferential rates, with discounts varying based on the scope and frequency of services. Contact us to discuss your specific needs, and we'll provide a customized pricing structure."
+    },
+    {
+      "question": "What level of support can I expect from your team?",
+      "answer": "All our clients receive dedicated support. With our Basic package, you'll receive standard email and phone support, while our Professional and Enterprise plans include priority support with faster response times, direct access to your financial team, and regular check-in meetings."
+    },
+    {
+      "question": "How do you stay current with changing tax regulations?",
+      "answer": "Our team undergoes continuous professional education and monitors regulatory changes daily. We implement systematic updates to our tax and advisory practices, ensuring our clients always receive advice based on the most current financial regulations and opportunities."
+    },
+    {
+      "question": "Does Smart Consultancy work with businesses in specific industries?",
+      "answer": "Yes, we have specialized expertise in several industries including technology, healthcare, real estate, professional services, and manufacturing. Our industry-specific knowledge allows us to provide targeted financial strategies that address the unique challenges and opportunities in these sectors."
+    }
+  ]
+}

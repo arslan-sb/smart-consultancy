@@ -1,0 +1,146 @@
+---
+// Import the necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSection from "@components/sections/landing/HeroSection.astro";
+import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
+import ClientsSection from "@components/sections/landing/ClientsSection.astro";
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
+import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
+import PricingSection from "@components/sections/pricing/PricingSection.astro";
+import FAQ from "@components/sections/misc/FAQ.astro";
+import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
+import heroImage from "@images/hero-image.avif";
+import faqs from "@data/faqs.json";
+import features from "@data/features.json";
+import pricing from "@data/pricing.json";
+import featureImage from "@images/features-image.avif";
+import construction from "@images/construction-image.avif";
+import tools from "@images/automated-tools.avif";
+import dashboard from "@images/dashboard-image.avif";
+import { partnersData } from "@/data_files/constants";
+
+const avatarSrcs: Array<string> = [
+  //"https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+  //"https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+  //"https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
+  //"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+];
+---
+
+<MainLayout>
+  <AnnouncementBanner
+    btnId="dismiss-button"
+    btnTitle="Book a Free Consultation"
+    url="/contact"
+  />
+
+  <HeroSection
+    title=`Optimize Your Finances with <span
+        class="text-blue-500 dark:text-blue-400">Smart Consultancy</span>`
+    subTitle="Expert tax, advisory, and bookkeeping services tailored to your unique financial needs."
+    primaryBtn="Our Services"
+    primaryBtnURL="/services"
+    secondaryBtn="Contact Our Team"
+    secondaryBtnURL="/contact"
+    withReview={true}
+    avatars={avatarSrcs}
+    rating=`<span class="font-bold">4.9</span> / 5`
+    starCount={5}
+    reviews=`From Over <span class="font-bold">2.5k</span> Clients`
+    src={heroImage}
+    alt="Business professionals analyzing financial documents"
+  />
+
+  <ClientsSection
+    title="Trusted by Businesses of All Sizes"
+    subTitle="Experience the reliability chosen by industry leaders and small businesses alike."
+    partners={partnersData}
+  />
+
+  <FeaturesGeneral
+    title="Comprehensive Financial Solutions"
+    subTitle="At Smart Consultancy, we tackle the unique challenges faced by businesses and individuals. From tax optimization to expert financial advisory and accurate bookkeeping, we're dedicated to helping you achieve your financial goals."
+    src={featureImage}
+    alt="Financial professionals at work"
+    features={features}
+  />
+
+  <FeaturesNavs
+    title=`Customize <span class="text-blue-500 dark:text-blue-400">Smart Consultancy</span>'s services to perfectly suit your financial management needs.`
+    tabs={[
+      {
+        heading: "Tax Services",
+        content:
+          "Empower your financial decisions with SmartConsult's expert tax services. Experience reduced tax liability and compliance with all regulations through our sophisticated tax planning and preparation solutions.",
+        svg: "tools",
+        src: tools,
+        alt: "Tax professional working with client",
+        first: true,
+      },
+      {
+        heading: "Financial Advisory",
+        content:
+          "Navigate financial challenges with Smart Consultancy's insightful advisory services. Set up and oversee your financial strategy seamlessly, with expert guidance designed for sustainable financial growth.",
+        svg: "dashboard",
+        src: dashboard,
+        alt: "Financial advisors in a consultation meeting",
+        second: true,
+      },
+      {
+        heading: "Bookkeeping Services",
+        content:
+          "Minimize complexity, maximize accuracy. Smart Consultancy's bookkeeping services are engineered to streamline your financial record-keeping, delivering results that provide clear insights for better business decisions.",
+        svg: "house",
+        src: construction,
+        alt: "Professional bookkeeper organizing financial records",
+      },
+    ]}
+  />
+
+  <TestimonialsSection
+    title="Optimize Your Financial Operations"
+    subTitle="At Smart Consultancy, we ensure a comprehensive approach with personalized service. Experience financial clarity redefined."
+    testimonials={[
+      {
+        content:
+          "Smart Consultancy dramatically improved our financial management. Their tax expertise saved us thousands, and their responsive advisory team provides invaluable guidance. Truly a game-changer for our business!",
+        author: "Arslan Shaukat",
+        role: "Chief Financial Officer | GrowthTech Inc.",
+        avatarSrc:
+          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+      },
+    ]}
+    statistics={[
+      {
+        count: "500+",
+        description:
+          "clients served — from individuals to major corporations",
+      },
+      {
+        count: "35%",
+        description:
+          "average tax savings for our business clients",
+      },
+      {
+        count: "98%",
+        description:
+          "client retention rate among our long-term clients",
+      },
+      {
+        count: "24/7",
+        description: "access to financial data through our secure portal",
+      },
+    ]}
+  />
+
+  <PricingSection pricing={pricing} />
+
+  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+
+  <HeroSectionAlt
+    title="Let's Build Your Financial Success"
+    subTitle="Schedule a free consultation today to discuss your tax, advisory, and bookkeeping needs."
+    url="/contact"
+  />
+</MainLayout>

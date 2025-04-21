@@ -1,0 +1,40 @@
+{
+  "title": "Simple, Transparent Pricing",
+  "subTitle": "Optimize your finances with Smart Consultancy's clear, value-driven packages.",
+  "badge": "Most Popular",
+  "thirdOption": "Enterprise Solutions?",
+  "btnText": "Get a Custom Quote",
+
+  "starterKit": {
+    "name": "Basic Package",
+    "description": "Best for individuals and small businesses",
+    "price": "199",
+    "cents": ".00",
+    "billingFrequency": "USD / monthly",
+    "features": [
+      "Personal tax preparation",
+      "Basic bookkeeping",
+      "Quarterly financial reviews",
+      "Standard support"
+    ],
+    "purchaseBtnTitle": "Choose Basic Package",
+    "purchaseLink": "/contact"
+  },
+
+  "professionalToolbox": {
+    "name": "Professional Package",
+    "description": "Best for growing businesses",
+    "price": "399",
+    "cents": ".00",
+    "billingFrequency": "USD / monthly",
+    "features": [
+      "Business & personal tax preparation",
+      "Comprehensive bookkeeping",
+      "Monthly advisory meetings",
+      "Tax planning & strategy",
+      "Priority support"
+    ],
+    "purchaseBtnTitle": "Choose Professional Package",
+    "purchaseLink": "/contact"
+  }
+}
