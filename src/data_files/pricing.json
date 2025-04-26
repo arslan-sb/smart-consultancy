@@ -8,9 +8,9 @@
   "starterKit": {
     "name": "Basic Package",
     "description": "Best for individuals and small businesses",
-    "price": "199",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
+    "price": "50,000",
+    "cents": "",
+    "billingFrequency": "PKR / monthly",
     "features": [
       "Personal tax preparation",
       "Basic bookkeeping",
@@ -24,9 +24,9 @@
   "professionalToolbox": {
     "name": "Professional Package",
     "description": "Best for growing businesses",
-    "price": "399",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
+    "price": "100,000",
+    "cents": "",
+    "billingFrequency": "PKR / monthly",
     "features": [
       "Business & personal tax preparation",
       "Comprehensive bookkeeping",
